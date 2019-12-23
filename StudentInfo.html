@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Student Portal</title>
+<meta charset="utf-8">
+<meta lang="en" >
+<link rel="stylesheet" type="text/css" href="StudentInfoC.css">
+<script>
+function Start()
+{
+
+var Name = ["Mohamed Ahmed","Ziad Ahmed","Yara Mamdouh","Hadeer Khaled","Mayar Mohamed"] ;
+var ID = ["20182856","20181875","20180366","20182985","20182145"] ;
+var Email = ["Mohamed-Ahmed@icloud.com","Ziad-Ahmed@gmail.com","Yara-Mamdouh@outlook.com","Hadeer-Khaled@yahoo.com","Mayar-Mohamed@hotmai.com"] ;
+var BirthDay = ["1/1/2001","11/11/2000","31/12/2000","16/12/1998","15/6/2000"] ;
+var College = ["Computer Scince","Biology","Art History","Accounting","Business"] ;
+
+var R = Math.floor(Math.random()*5) ;
+
+document.getElementById("NameRandom").value = Name[R] ;
+document.getElementById("IdRandom").value = ID[R] ;
+document.getElementById("EmailRandom").value = Email[R] ;
+document.getElementById("BirthDayRandom").value = BirthDay[R] ;
+document.getElementById("CollegeRandom").value = College[R] ;
+
+}
+</script>
+
+</head>
+
+<!---------------------------------------------------------------------------------------------------------------------------->
+
+<body onload="Start()" class="all">
+
+<ul class="nav">
+<li><a href="StudentHome.html"> Home </a></li>
+<li><a href="StudentInfo.html"> Information </a></li>
+<li><a href="StudentCourses.html"> Courses </a></li>
+<li><a href="Fees.html"> Fees </a></li>
+<li class="log"><a href="Login.html"> Logout </a></li>
+</ul>
+
+<div class="Box">
+
+<table>
+
+<tr>
+<h1> Information <h1>
+</tr>
+<tr>
+<td><h3> Name : <h3></td>
+<td><input type="text" id="NameRandom" readonly></td>
+</tr>
+<tr>
+<td><h3> ID : <h3></td>
+<td><input type="text" id="IdRandom" readonly></td>
+</tr>
+<tr>
+<td><h3> Email : <h3></td>
+<td><input type="text" id="EmailRandom" readonly></td>
+</tr>
+<tr>
+<td><h3> Birth Day : <h3></td>
+<td><input type="text" id="BirthDayRandom" readonly></td>
+</tr>
+<tr>
+<td><h3> College : <h3></td>
+<td><input type="text" id="CollegeRandom" readonly></td>
+</tr>
+
+</table>
+
+</div>
+
+</body>
+
+<!---------------------------------------------------------------------------------------------------------------------------->
+
+<footer>
+
+&copy;<a href="#"> University of Yotuga </a>
+&nbsp;&mdash;&nbsp;
+<a href="mailto:20181875@fue.edu.eg"> Contact us </a>
+
+</footer>
+
+</html>

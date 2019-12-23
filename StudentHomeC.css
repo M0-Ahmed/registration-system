@@ -1,0 +1,121 @@
+.nav li a {
+float : left ;
+display : block ;
+text-align : center ;
+padding : 12px 25px 15px 25px ;
+font-size : 25px ;
+text-decoration : none ;
+color : #FFFFFF ;
+font-family : Comic Sans MS ;
+}
+
+.nav {
+list-style-type : none ;
+margin : 5px ;
+padding : 0px ;
+border-radius : 15px ;
+overflow : hidden ;
+background-color : #17202A ;
+border : 1px solid #17202A ;
+}
+
+.nav .log {
+float : right ;
+}
+
+li a:hover:not(.active) {
+background-color : #5D6D7E ;
+}
+
+li a.active {
+color : #FFFFFF ;
+background-color : #17202A ;
+}
+
+footer {
+position : fixed ;
+bottom : 0 ;
+left : 50% ;
+transform : translate(-50%, -50%) ;
+border-radius : 5px ;
+background-color : #17202A ;
+color : #FFFFFF ;
+padding : 0px 6px 5px 6px ;
+}
+
+footer a {
+text-decoration : none ;
+color : #FFFFFF ;
+font-family : Comic Sans MS ;
+}
+
+.Box3 {
+width : 320px ;
+height : 200px ;
+background-color : #17202A ;
+position : fixed ;
+top : 70% ;
+left : 20% ;
+transform : translate(-50%, -50%) ;
+padding : 30px ;
+border-radius : 25px ;
+box-shadow : 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) ;
+opacity : 0.9 ;
+}
+
+.Box4 {
+width : 320px ;
+height : 200px ;
+background-color : #17202A ;
+position : fixed ;
+top : 35% ;
+left : 20% ;
+transform : translate(-50%, -50%) ;
+padding : 30px ;
+border-radius : 25px ;
+box-shadow : 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) ;
+opacity : 0.9 ;
+}
+
+.all {
+background-size : cover ;
+background-repeat : no-repeat ;
+background-image : url("B.jpg") ;
+}
+
+h3{
+font-size : 15px ;
+color : #FFFFFF ;
+font-family : Comic Sans MS ;
+text-align : center ;
+}
+
+h1{
+text-align : center ;
+font-size : 45px ;
+color : #FFFFFF ;
+font-family : Comic Sans MS ;
+}
+
+.Feed{
+font-size : 20px ;
+border : 1px solid #FFFFFF ;
+background : transparent ;
+height : 100px ;
+width : 300px ;
+outline : none ;
+padding : 0px 10px 10px 10px ;
+}
+
+.Sub {
+background-color : #2E4053 ;
+color : #FFFFFF ;
+height : 40px;
+border : 1px solid black;
+width : 100px ;
+font-size : 20px ;
+margin-left : 100px ;
+cursor : pointer ;
+border-radius : 7px ;
+overflow : visible ;
+}

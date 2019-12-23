@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title> Student Portal </title>
+<meta charset="utf-8">
+<meta lang="en" >
+<link rel="stylesheet" type="text/css" href="AddAndDrop.css">
+<script>
+function Add() {
+
+var CourseId = document.getElementById("CourseId").value ;
+var CourseName = document.getElementById("CourseName").value ;
+
+if(CourseId != "" && CourseName != "")
+{
+window.alert(" ( Record Inserted Successfully ! ) ") ;
+}
+}
+
+function Drop() {
+
+var CourseList = document.getElementById("List").value ;
+
+if(CourseList != "")
+{
+window.alert(" ( Record Drop Successfully ! ) ") ;
+}
+}
+</script>
+
+</head>
+
+<!----------------------------------------------------------------------------------------------------------------------------------->
+
+<body class="all">
+
+<ul class="nav">
+<li><a href="StudentHome.html"> Home </a></li>
+<li><a href="StudentInfo.html"> Information </a></li>
+<li><a href="StudentCourses.html"> Courses </a></li>
+<li><a href="Fees.html"> Fees </a></li>
+<li class="log"><a href="Login.html"> Logout </a></li>
+</ul>
+
+<div class="BoxAdd">
+<p class="B_"> Fill the Following to Add Courses </p>
+
+<h3> Course ID </h3>
+<input id="CourseId" type="text" class="In1" required autocomplete="on"></input>
+<h3> Course Name </h3>
+<input id="CourseName" type="text" class="In2" required autocomplete="on"></input>
+<input  type="submit" value="Add" class="Sub" onclick="Add()">
+
+</div>
+
+<div class="BoxDrop">
+<p class="B_"> Choose a Course to Drop </p>
+<h3> Course Name : </h3>
+<input type="text" class="Remove" id="List" required autocomplete="on">
+<input type="submit" value="Drop" class="Sub" onclick="Drop()">
+</div>
+
+</body>
+
+<!----------------------------------------------------------------------------------------------------------------------------------->
+
+<footer>
+
+&copy;<a href="#"> University of Yotuga </a>
+&nbsp;&mdash;&nbsp;
+<a href="mailto:20181875@fue.edu.eg"> Contact us </a>
+
+</footer>
+
+</html>
